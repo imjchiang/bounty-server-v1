@@ -22,7 +22,6 @@ let bountySchema = new mongoose.Schema({
       type: Number,
       default: 100000
     },
-    hunters: Array,
     captured: {
       type: Boolean,
       default: false
@@ -32,6 +31,3 @@ let bountySchema = new mongoose.Schema({
 
 // Export the model
 module.exports = mongoose.model('Bounty', bountySchema)
-
-// Export all the things
-mondule.exports.Bounty = require('./bounty')
