@@ -4,7 +4,8 @@ const mongoose = require('mongoose')
 // Mongo Connection String
 mongoose.connect('mongodb://localhost/bountyhunters', {
     useNewUrlParser: true, 
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 })
 
 // shortcut to mongoose.connection object
