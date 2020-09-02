@@ -16,9 +16,9 @@ app.use('/bounties', require('./controllers/bounties'))
 
 // GET /
 app.get('/', (req, res)=> {
-    res.send('You\'ve hit the home route of the Mongo Bounty Hunter server!')
+  res.send('You\'ve hit the home route of the Mongo Bounty Hunter server!')
 })
 
-app.listen(8000, ()=>{
-    console.log('Yee-haw')
+app.listen(process.env.PORT || 8000, ()=>{
+  console.log(`☕️ You're listening to the smooth sounds of port ${process.env.PORT || 8000}`)
 })
