@@ -10,6 +10,7 @@ let hunterSchema = new mongoose.Schema({
     maxlength: 99
   },
   notoriety: {
+    type: String,
     default: 'Unknown'
   }
 })
